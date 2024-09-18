@@ -4,7 +4,7 @@ from sentence_transformers import SentenceTransformer, util
 import numpy as np
 
 app = Flask(__name__)
-app.config['MONGO_URI'] = 'mongodb://192.168.53.57:27017/booksdb'  
+app.config['MONGO_URI'] = 'mongodb://localhost:27017/booksdb'  
 mongo = PyMongo(app)
 
 model = SentenceTransformer('paraphrase-MiniLM-L6-v2')
